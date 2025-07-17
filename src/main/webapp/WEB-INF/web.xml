@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>RestauranteControlador</servlet-name>
+        <servlet-class>controlador.RestauranteControlador</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RestauranteControlador</servlet-name>
+        <url-pattern>/RestauranteControlador</url-pattern>
+    </servlet-mapping>
+
+    <!-- Aquí agregamos el UsuarioControlador -->
+    <servlet>
+        <servlet-name>UsuarioControlador</servlet-name>
+        <servlet-class>controlador.UsuarioControlador</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UsuarioControlador</servlet-name>
+        <url-pattern>/UsuarioControlador</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

@@ -1,0 +1,22 @@
+# Maven
+/target/
+*.log
+
+# Java
+*.class
+
+# NetBeans
+nbproject/private/
+build/
+dist/
+.netbeans/
+
+# IDEs
+*.iml
+.idea/
+*.swp
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
